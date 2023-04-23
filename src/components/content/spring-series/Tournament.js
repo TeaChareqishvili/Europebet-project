@@ -1,11 +1,142 @@
+import React from 'react'
+
 import styled from "styled-components";
+import timeIcon from "../../../assets/time.png";
+ import cardRight from "../../../assets/promo-right-img.png";
+import cardLeft from "../../../assets/promo-left-img.png";
 
 export const Tournament =styled.div`
      background-color:#171718;
      border-radius:16px;
-     border:solid 4px #25292B;
+     border:solid 4px #2C3234;
      width:100%;
-     max-width:846px;
+     max-width:940px;
+     margin-bottom:23px;
+     margin-bottom:23px;
+   
     
 
+`
+export const TournamentHeader = styled.div`
+     background-color:#2C3234;
+     padding:24px 0 23px 0;
+     position:relative;
+
+     :before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    transform: translateX(50%);
+    right: 50%;
+    height: 4px;
+    width: 30%;
+    border-radius: 0 0 4px 4px;
+    background-color: #ef5a21;
+    box-shadow: 0 0 5px #ef5a21;
+     }
+      h2{
+        font-size:16px;
+        color:#FFFFFF;
+        font-weight:bold;
+        text-align:center;
+      }
+
+      @media(min-width:768px){
+        h2{
+            font-size:18px;
+        }
+      }
+     
+`
+
+export default function TournamentContent(){
+    return(
+        <Content>
+            <h3>სერიის ფარგლებში, ყოველდღიურად გაიმართება 3 ივენთი:</h3>
+            <img src={timeIcon} alt="time"/>
+            <div className="mobileBackground">
+            <p>* ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან.</p>
+            <p>ტურნირების სრული განრიგის სანახავად გადადი პოკერის ლობიში</p>
+            <button>პოკერის ლობი</button>
+            </div>
+            <div className="leftCard">
+                <img src={cardLeft} alt="card"/>
+             </div>
+             <div className="rightCard">
+                <img src={cardRight} alt="card"/>
+             </div>
+        </Content>
+    )
+}
+
+export const Content = styled.div`
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   position:relative;
+   .leftCard{
+   
+    position:absolute;
+    bottom:-4px;
+    left:0;
+   }
+   .rightCard{
+    position:absolute;
+    bottom:-4px;
+    right:0;
+   }
+   h3{
+    font-size:16px;
+    color:#FFFFFF;
+    font-weight:bold;
+    line-height:2;
+    padding:14px 15px 16px 15px;
+    text-align:center;
+ 
+   }
+
+   .mobileBackground{
+      background-color:#2C3234;
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      border-radius:0 0 16px 16px;
+      
+   }
+
+   button{
+       padding:7px 18px 7px 18px;
+       background-color:#F05A22;
+       border-radius:5px;
+       color:#FFFFFF;
+       font-size:15px;
+       border:none;
+       margin: 21px 0 28px 0;
+       cursor:pointer;
+   }
+
+   p{
+    font-size:14px;
+    color:#FFFFFF;
+    font-weight:Medium;
+    text-align:center;
+    padding:12px 10px 0 11px;
+   }
+
+   @media(min-width:768px){
+   h3{
+    font-size:18px;
+    padding:14px 0 0 0;
+   } 
+
+   .mobileBackground{
+      background-color:#171718;
+   }
+
+
+  
+   }
 `

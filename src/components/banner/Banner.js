@@ -1,3 +1,5 @@
+import React from 'react'
+
 import bannerimage from "../../assets/banner.jpg"
 import styled from 'styled-components'
 

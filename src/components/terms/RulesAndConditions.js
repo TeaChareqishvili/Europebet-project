@@ -1,16 +1,41 @@
+import React from 'react'
+import { useState } from "react";
 import styled from "styled-components";
-import { rulesData } from "./data";
+import { rulesData } from "../content/cash-game/data";
+import AdditionalRules from "./Rules";
 
 export default function RulesAndCondition() {
+  const [isActive, setIsActive] = useState(false);
+  const [active, setActive] = useState("");
+  const [anim, setAnim] = useState(false);
+
+  const clickHandler = (id) => {
+    if (id === active) {
+      setIsActive(false);
+      setAnim(false);
+      setActive("");
+    } else {
+      setIsActive(true);
+      setAnim(true);
+      setActive(id);
+    }
+  };
+
   return (
     <>
       <RulesWrapper>
         <h3>წესები და პირობები</h3>
         {rulesData.map((item, id) => (
-          <Rules key={id}>
-            <p>{item.text}</p>
-            <img src={item.image} alt="vector" />
-          </Rules>
+          <div key={id}>
+            <Rules
+              onClick={() => clickHandler(id)}
+              anim={anim && active === id}
+            >
+              <p>{item.text}</p>
+              <img src={item.image} alt="vector" />
+            </Rules>
+            <AdditionalRules isActive={isActive && active === id} />
+          </div>
         ))}
       </RulesWrapper>
     </>
@@ -46,13 +71,15 @@ export const Rules = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-
-
+  cursor: pointer;
   p {
     color: #bbbbbb;
     font-size: 14px;
     line-height: 1.7;
-   
+  }
+  img {
+    transform: ${(p) => (p.anim ? "rotate(180deg)" : "rotate(0deg)")};
+    transition: transform 0.2s linear;
   }
 
   @media (min-width: 768px) {
@@ -62,7 +89,6 @@ export const Rules = styled.div`
     p {
       color: #ffffff;
       font-size: 15px;
-     
     }
   }
 `;

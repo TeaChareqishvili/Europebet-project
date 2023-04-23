@@ -92,15 +92,21 @@ export const dataTicket = [
   {
     image: planeIcon,
     text: "The Festival in Malta-ს საგზური",
+    widthDesktop: "40px",
+    widthMobile: "33px",
   },
 
   {
     image: tickettIcon,
     text: "სპეციალური ტურნირის „Cashgame Sharks” ბილეთი, სადაც გათამაშდება The Festival in Malta-ს საგზური",
+    widthDesktop: "40px",
+    widthMobile: "33px",
   },
   {
     image: giftIcon,
     text: "ტექნიკის მაღაზიის ვაუჩერი",
+    widthDesktop: "36px",
+    widthMobile: "33px",
   },
 ];
 

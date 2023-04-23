@@ -193,21 +193,23 @@ export const LeaderResults = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px 0 25px 0;
+  padding:14px 20px 14px 20px;
    
   p{
     font-size:13px;
     color:#FFFFFF;
+    padding-bottom:10px;
+    text-align:center;
   }
   span{
     color:#EF5A21;
     text-decoration:underline;
     font-size:13px;
     line-height:1.6;
+    text-align:center;
   }
 
   @media(min-width:768px){
-  flex-direction:row;
   padding: 16px 0 20px 0;
   }
   p{
@@ -215,6 +217,6 @@ export const LeaderResults = styled.div`
   }
   span{
     font-size:14px;
-    margin-left:5px;
+   
   }
 `;

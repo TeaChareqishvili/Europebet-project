@@ -1,7 +1,10 @@
+import React from 'react'
 import styled from "styled-components";
 import Banner from "./banner/Banner";
 import Info from "./title-info/Info";
 import Tabs from "./content/Tabs";
+import RulesAndCondition from "./terms/RulesAndConditions";
+import Slide from "./slider/Slide";
 
 function Main() {
   return (
@@ -10,6 +13,8 @@ function Main() {
       <div className="content-wrapper">
         <Info />
         <Tabs />
+        <RulesAndCondition />
+        <Slide />
       </div>
     </MainWrapper>
   );

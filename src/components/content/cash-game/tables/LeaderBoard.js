@@ -1,3 +1,5 @@
+import React from 'react'
+
 import {
   RowTable,
   SubTitle,
@@ -19,7 +21,6 @@ export default function LeaderBoard({ title, data }) {
         <TableHeader>
           <p>ადგილი</p>
           <p>
-            {" "}
             <img src={giftIcon} alt="gifticon" /> ვაუჩერი
           </p>
           <p>პრიზი</p>
@@ -46,4 +47,3 @@ export default function LeaderBoard({ title, data }) {
     </>
   );
 }
-

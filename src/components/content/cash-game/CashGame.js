@@ -1,3 +1,4 @@
+import React from 'react'
 import { SideLeaderBoard } from "../SideLeaderBoard";
 import {
   CashGameContainer,
@@ -6,8 +7,6 @@ import {
   LeaderResults,
 } from "./CashGameStyle";
 import { data } from "./data";
-import RulesAndCondition from "./RulesAndConditions";
-import Slide from "./Slide";
 import LeaderBoard from "./tables/LeaderBoard";
 import TicketsList from "./tables/TicketsList";
 
@@ -31,8 +30,7 @@ function CashGame() {
         <h2>ᲓᲐᲛᲐᲢᲔᲑᲘᲗ ᲨᲔᲓᲒᲔᲑᲐ, ᲥᲔᲨᲒᲔᲘᲛᲘᲡ, ᲢᲣᲠᲜᲘᲠᲔᲑᲘᲡ ᲓᲐ ᲡᲞᲘᲜ ᲞᲝᲙᲔᲠᲘᲡ 12 SIDE ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲘ</h2>
         <p>* Side ლიდერბორდების შესახებ დეტალური ინფორმაცია იხილეთ პოკერის ლობიში.</p>
       </SideLeaderBoard>
-      <RulesAndCondition/>
-      <Slide/>
+
     </CashGameContainer>
   );
 }
