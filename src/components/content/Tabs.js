@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
+import CashGame from "./cash-game/CashGame";
+import SpringSeries from "./spring-series/SpringSeries";
 
 function Tabs() {
   const tabContent = [
@@ -23,11 +25,11 @@ function Tabs() {
         ))}
       </TabsWrapper>
       {active === 0 ? (
-        <div className="content">content 1</div>
+         <CashGame/>
       ) : active === 1 ? (
-        <div className="content">content 2</div>
+       <SpringSeries/>
       ) : (
-        <div className="content">content 3</div>
+        <div className="content"></div>
       )}
     </>
   );
