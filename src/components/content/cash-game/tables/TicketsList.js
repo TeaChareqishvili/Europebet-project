@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { TicketsWrapper, TicketTable } from "../Tickets";
+import { TicketsWrapper, TicketTable } from "../TicketsStyled";
 import { dataTicket } from "../data";
 
 export default function TicketsList() {

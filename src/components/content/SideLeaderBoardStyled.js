@@ -1,44 +1,60 @@
-import React from 'react'
-import { useState } from "react";
 import styled from "styled-components";
-import CashGame from "./cash-game/CashGame";
-import SpringSeries from "./spring-series/SpringSeries";
 
-function Tabs() {
-  const tabContent = [
-    { title: "Cash Games", subtitle: "1-29 აპრილი" },
-    { title: "Spring Series", subtitle: "13-29 აპრილი" },
-    { title: "Final Stage", subtitle: "30 აპრილი" },
-  ];
-  const [active, setActive] = useState(0);
-  const clickHandler = (id) => {
-    setActive(id);
-  };
-  return (
-    <>
-      <TabsWrapper>
-        {tabContent.map((tab, id) => (
-          <Tab key={id} act={active === id} onClick={() => clickHandler(id)}>
-            <div />
-            <span>{tab.subtitle}</span>
-            <p>{tab.title}</p>
-          </Tab>
-        ))}
-      </TabsWrapper>
-      {active === 0 ? (
-         <CashGame/>
-      ) : active === 1 ? (
-       <SpringSeries/>
-      ) : (
-        <div className="content"></div>
-      )}
-    </>
-  );
-}
+export const SideLeaderBoard = styled.div`
+  background-color: #2c3234;
+  border-radius: 16px;
+  margin: 24px 16px;
+  padding: 24px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 854px;
+  margin: 0 auto 25px;
+  position: relative;
 
-export default Tabs;
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    transform: translateX(50%);
+    right: 50%;
+    height: 4px;
+    width: 30%;
+    border-radius: 0 0 4px 4px;
+    background-color: #ef5a21;
+    box-shadow: 0 0 5px #ef5a21;
+  }
 
-const TabsWrapper = styled.div`
+  h2 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    padding: 24px 30px;
+
+    h2 {
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+`;
+
+export const TabsWrapper = styled.div`
   background-color: #2c3234;
   border-radius: 8px;
   display: flex;
@@ -54,7 +70,7 @@ const TabsWrapper = styled.div`
   }
 `;
 
-const Tab = styled.div`
+export const Tab = styled.div`
   position: relative;
   color: #ffffff;
   border-radius: 8px;

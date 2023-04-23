@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
 import Banner from "./banner/Banner";
 import Info from "./title-info/Info";
-import Tabs from "./content/Tabs";
+import Content from "./content/Content";
 import RulesAndCondition from "./terms/RulesAndConditions";
 import Slide from "./slider/Slide";
 
@@ -12,10 +12,10 @@ function Main() {
       <Banner />
       <div className="content-wrapper">
         <Info />
-        <Tabs />
+        <Content />
         <RulesAndCondition />
-        <Slide />
       </div>
+      <Slide />
     </MainWrapper>
   );
 }
@@ -28,15 +28,18 @@ const MainWrapper = styled.main`
   background-color: #1c1d1e;
   border-radius: 13px;
   margin-top: 30px;
-  /* height: calc(100vh - 70px);
-  overflow-y: scroll; */
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
 
   .content-wrapper {
-    padding: 24px 16px 55px;
+    padding: 24px 16px 40px;
   }
   @media (min-width: 768px) {
     .content-wrapper {
-      padding: 24px 43px 55px;
+      padding: 24px 43px 40px;
     }
   }
 `;

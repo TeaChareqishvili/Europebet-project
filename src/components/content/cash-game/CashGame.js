@@ -1,5 +1,5 @@
 import React from 'react'
-import { SideLeaderBoard } from "../SideLeaderBoard";
+import { SideLeaderBoard } from "../SideLeaderBoardStyled";
 import {
   CashGameContainer,
   CashGameHeader,
