@@ -5,10 +5,13 @@ import Info from "./title-info/Info";
 import Content from "./content/Content";
 import RulesAndCondition from "./terms/RulesAndConditions";
 import Slide from "./slider/Slide";
+import BannerHeader from "./banner/BannerHeader";
+import Footer from "./footer/Footer";
 
 function Main() {
   return (
     <MainWrapper>
+      <BannerHeader />
       <Banner />
       <div className="content-wrapper">
         <Info />
@@ -16,6 +19,7 @@ function Main() {
         <RulesAndCondition />
       </div>
       <Slide />
+      <Footer/>
     </MainWrapper>
   );
 }
@@ -30,6 +34,7 @@ const MainWrapper = styled.main`
   margin-top: 30px;
   height: calc(100vh - 70px);
   overflow-y: scroll;
+  position: relative;
   ::-webkit-scrollbar {
     width: 2px;
   }

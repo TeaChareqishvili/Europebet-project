@@ -89,31 +89,44 @@ export const TableWrapper = styled.div`
 
 export const TableHeader = styled.div`
   display: grid;
-  grid-template-columns: auto auto auto;
-  text-align: center;
-  align-items: center;
+  grid-template-columns: 15% 55% 20%;
   width: 100%;
+   margin-left:14px; 
 
+    .giftIcon{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
   p {
-    text-align: center;
+    font-size:12px;
+    color:#7D7D7D;
+   
   }
-  p:first-child {
-    text-align: left;
+  span{
+    font-size:12px;
+    color:#7D7D7D;
+   
   }
 
-  font-size: 12px;
-  color: #7d7d7d;
+
+
   img {
     width: 10px;
     margin-right: 4px;
   }
 
   @media (min-width: 768px) {
-    font-size: 14px;
+    margin-left:42px;
     padding: 0px 0 20px 0;
     img {
-      width: 12px;
+      width: 19px;
       margin-right: 7px;
+    }
+    p,span{
+      font-size:13px;
+      opacity:90%;
+     
     }
   }
 `;
@@ -207,6 +220,7 @@ export const LeaderResults = styled.div`
     font-size:13px;
     line-height:1.6;
     text-align:center;
+    cursor:pointer;
   }
 
   @media(min-width:768px){

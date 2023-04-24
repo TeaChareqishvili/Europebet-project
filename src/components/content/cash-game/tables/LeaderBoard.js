@@ -20,9 +20,12 @@ export default function LeaderBoard({ title, data }) {
       <TableWrapper>
         <TableHeader>
           <p>ადგილი</p>
-          <p>
-            <img src={giftIcon} alt="gifticon" /> ვაუჩერი
-          </p>
+          <div className="giftIcon">
+          <img src={giftIcon} alt="gifticon" />
+          <span>
+            ვაუჩერი
+          </span>
+          </div>
           <p>პრიზი</p>
         </TableHeader>
         <div className="tableContainer">
