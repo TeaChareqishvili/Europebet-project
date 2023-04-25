@@ -9,22 +9,21 @@ import {
 } from "../CashGameStyle";
 import infoIcon from "../../../../assets/example-icon.png";
 import giftIcon from "../../../../assets/gift.png";
+import mechanicIcon from "../../../../assets/mechanic-icon.png";
 
-export default function LeaderBoard({ title, data }) {
+export default function LeaderBoard({ title, data, icon }) {
   return (
     <>
-      <SubTitle>
+      <SubTitle icon={icon}>
         <p>{title}</p>
-        <img src={infoIcon} alt="infoicon" />
+        <img src={icon ? mechanicIcon : infoIcon} alt="infoicon" />
       </SubTitle>
       <TableWrapper>
         <TableHeader>
           <p>ადგილი</p>
           <div className="giftIcon">
-          <img src={giftIcon} alt="gifticon" />
-          <span>
-            ვაუჩერი
-          </span>
+            <img src={giftIcon} alt="gifticon" />
+            <span>ვაუჩერი</span>
           </div>
           <p>პრიზი</p>
         </TableHeader>

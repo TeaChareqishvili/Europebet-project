@@ -3,14 +3,14 @@ import { useState } from "react";
 import CashGame from "./cash-game/CashGame";
 import SpringSeries from "./spring-series/SpringSeries";
 import { TabsWrapper, Tab } from "./SideLeaderBoardStyled";
-import FinalStage from "../finalstage/FinalStage";
+import FinalStage from "./finalstage/FinalStage";
 function Content() {
   const tabContent = [
     { title: "Cash Games", subtitle: "1-29 აპრილი" },
     { title: "Spring Series", subtitle: "13-29 აპრილი" },
     { title: "Final Stage", subtitle: "30 აპრილი" },
   ];
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
   const clickHandler = (id) => {
     setActive(id);
   };

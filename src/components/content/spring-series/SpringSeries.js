@@ -26,7 +26,11 @@ export default function SpringSeries() {
         <CashGameHeader>
           <h2>მოხვდი TOP22 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით</h2>
         </CashGameHeader>
-        <LeaderBoard title="ჰოლდემის TOP20 ლიდერბორდი" data={data} />
+        <LeaderBoard
+          title="ქულების დაგროვების მექანიკა"
+          data={data}
+          icon={true}
+        />
         <TicketsList />
         <LeaderResults>
           <p>
@@ -40,8 +44,14 @@ export default function SpringSeries() {
       </CashGameWrapper>
       <Satellite />
       <SideLeaderBoard>
-        <h2>ᲓᲐᲛᲐᲢᲔᲑᲘᲗ ᲨᲔᲓᲒᲔᲑᲐ, ᲥᲔᲨᲒᲔᲘᲛᲘᲡ, ᲢᲣᲠᲜᲘᲠᲔᲑᲘᲡ ᲓᲐ ᲡᲞᲘᲜ ᲞᲝᲙᲔᲠᲘᲡ 12 SIDE ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲘ</h2>
-        <p>* Side ლიდერბორდების შესახებ დეტალური ინფორმაცია იხილეთ პოკერის ლობიში.</p>
+        <h2>
+          ᲓᲐᲛᲐᲢᲔᲑᲘᲗ ᲨᲔᲓᲒᲔᲑᲐ, ᲥᲔᲨᲒᲔᲘᲛᲘᲡ, ᲢᲣᲠᲜᲘᲠᲔᲑᲘᲡ ᲓᲐ ᲡᲞᲘᲜ ᲞᲝᲙᲔᲠᲘᲡ 12 SIDE
+          ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲘ
+        </h2>
+        <p>
+          * Side ლიდერბორდების შესახებ დეტალური ინფორმაცია იხილეთ პოკერის
+          ლობიში.
+        </p>
       </SideLeaderBoard>
     </>
   );

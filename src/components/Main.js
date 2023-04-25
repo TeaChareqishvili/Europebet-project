@@ -1,26 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Banner from "./banner/Banner";
 import Info from "./title-info/Info";
 import Content from "./content/Content";
 import RulesAndCondition from "./terms/RulesAndConditions";
 import Slide from "./slider/Slide";
-import BannerHeader from "./banner/BannerHeader";
 import Footer from "./footer/Footer";
+import Header from "./header/Header";
 
 function Main() {
+  const [close, setClose] = useState(false);
+
+  const handleClose = (b) => setClose(b);
+
   return (
-    <MainWrapper>
-      <BannerHeader />
-      <Banner />
-      <div className="content-wrapper">
-        <Info />
-        <Content />
-        <RulesAndCondition />
-      </div>
-      <Slide />
-      <Footer/>
-    </MainWrapper>
+    <>
+      <div
+        style={{
+          height: "100%",
+          width: "100%",
+          position: 'absolute',
+          left: 0,
+          top: 0,
+        }}
+        onClick={() => handleClose(false)}
+      />
+      {!close && (
+        <MainWrapper>
+          <Header />
+          <Banner handleClose={handleClose} />
+          <div className="content-wrapper">
+            <Info />
+            <Content />
+            <RulesAndCondition />
+          </div>
+          <Slide />
+          <Footer />
+        </MainWrapper>
+      )}
+    </>
   );
 }
 
