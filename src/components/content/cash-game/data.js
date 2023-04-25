@@ -4,6 +4,12 @@ import planeIcon from "../../../assets/travel-icon-sm.png";
 import tickettIcon from "../../../assets/ticket-icon-sm.png";
 import giftIcon from "../../../assets/gift.png";
 import vector from "../../../assets/vector.png";
+import festivalIcon from "../../../assets/final-item-event-icon.png";
+import hotelIcon from "../../../assets/final-item-hotel-icon.png";
+import cashIcon from "../../../assets/final-item-money-icon.png";
+import finalTicketIcon from "../../../assets/download.png";
+import travelDataIcon from "../../../assets/poker-item-1-ticket-icon.png";
+import ticketsIconPlane from "../../../assets/poker-item-2-ticket-icon.png";
 
 export const data = [
   {
@@ -123,4 +129,83 @@ export const rulesData = [
     text: "სხვადასვა",
     image: vector,
   },
+];
+
+
+export const travelData = [
+  {
+    image: finalTicketIcon,
+    text: "ორმხრივი ავიაბილეთი"
+  },
+  {
+    image: festivalIcon,
+    text: "The Festival in Malta -ს მეინ ივენთის ბაი-ინი"
+  },
+  {
+    image: festivalIcon,
+    text: "Holdem ან Omaha ჰაიროლერ ტურნირის ბაი-ინი"
+  },
+  {
+    image: hotelIcon,
+    text: "სასტუმრო"
+  },
+  {
+    image: cashIcon,
+    text: "€500 სახარჯი ფული"
+  }
+];
+
+export const travelData2 = [
+  {
+    image: finalTicketIcon,
+    text: "ორმხრივი ავიაბილეთი"
+  },
+  {
+    image: festivalIcon,
+    text: "The Festival in Malta -ს მეინ ივენთის ბაი-ინი"
+  },
+ 
+  {
+    image: hotelIcon,
+    text: "სასტუმრო"
+  },
+  {
+    image: cashIcon,
+    text: "€500 სახარჯი ფული"
+  }
+];
+
+export const travelDataTickets = [
+  {
+     image:travelDataIcon,
+     textTitle:'“Cashgame Highrollers” -',
+     text:'C კატეგორიის 1 საგზური'
+  },
+  {
+    image:travelDataIcon,
+    textTitle:'„Cashgame Grinders”',
+    text:'C კატეგორიის 1 საგზური'
+  },
+  {
+    image:travelDataIcon,
+    textTitle: '„Tournament Sharks“ -',
+    text:'C კატეგორიის 1 საგზური'
+  }
+];
+
+export const travelRightData = [
+  {
+    image:  ticketsIconPlane,
+    textTitle: '„The Festival in Malta, GTD“',
+    text1:'A კატეგორიის 1 საგზური',
+    text2:'B კატეგორიის 1 საგზური',
+    text3:'*ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.',
+
+  },
+     {
+      image:  travelDataIcon,
+    textTitle: '“Cashgame Sharks“',
+    text1:'C კატეგორიის 1 საგზური',
+    text2:'*ტურნირზე მონაწილებას შეძლებენ მხოლოდ ევროპაბეთის ბეჭდის მფლობელები.',
+     }
 ];

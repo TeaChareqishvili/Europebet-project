@@ -5,6 +5,7 @@ import { TournamentHeader } from "./Tournament";
 import LeaderBoard from "../cash-game/tables/LeaderBoard";
 import { data } from "../cash-game/data";
 import TicketsList from "../cash-game/tables/TicketsList";
+import { SideLeaderBoard } from "../SideLeaderBoardStyled";
 import {
   CashGameWrapper,
   CashGameHeader,
@@ -38,6 +39,10 @@ export default function SpringSeries() {
         </LeaderResults>
       </CashGameWrapper>
       <Satellite />
+      <SideLeaderBoard>
+        <h2>ᲓᲐᲛᲐᲢᲔᲑᲘᲗ ᲨᲔᲓᲒᲔᲑᲐ, ᲥᲔᲨᲒᲔᲘᲛᲘᲡ, ᲢᲣᲠᲜᲘᲠᲔᲑᲘᲡ ᲓᲐ ᲡᲞᲘᲜ ᲞᲝᲙᲔᲠᲘᲡ 12 SIDE ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲘ</h2>
+        <p>* Side ლიდერბორდების შესახებ დეტალური ინფორმაცია იხილეთ პოკერის ლობიში.</p>
+      </SideLeaderBoard>
     </>
   );
 }
