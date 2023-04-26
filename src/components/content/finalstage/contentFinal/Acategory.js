@@ -43,9 +43,7 @@ export default function Acategory() {
 }
 
 export const CategoryWrapper = styled.div`
-  /* display:flex;
-    justify-content:center;
-    align-items:center; */
+ 
 
   @media (min-width: 768px) {
     display: grid;
@@ -63,11 +61,10 @@ export const TravelIncludeWrapper = styled.div`
 
 export const Travel = styled.div`
   width: 100%;
-  /* max-width: 301px; */
-  background-color: #2c3234;
   border-radius: 10px;
   position: relative;
   margin: 0 auto 20px;
+  background-color:#25292B;
   :before {
     content: "";
     position: absolute;
@@ -90,6 +87,8 @@ export const Travel = styled.div`
     padding: 18px 0 17px 0;
     line-height: 1.8;
     color: #ffffff;
+    background-color:#2C3234;
+    border-radius:10px 10px 0  0;
   }
   @media (min-width: 768px) {
     margin: 0 auto;

@@ -1,10 +1,23 @@
 import styled from "styled-components";
 
 export const WinTravelWrapper = styled.div`
-  background-color: #171718;
+   background-color:#25292B;
   border: solid 4px #25292b;
   border-top: none;
   border-radius: 0 0 16px 16px;
+  width: 100%;
+  max-width: 940px;
+  padding: 20px;
+  margin-bottom:24px;
+
+  @media (min-width: 768px) {
+    background-color: #171718;
+  } 
+   
+`;
+
+export const WinTravelListWrapper =styled.div`
+    background-color:#25292B;
   width: 100%;
   max-width: 940px;
   padding: 20px;
@@ -16,13 +29,9 @@ export const WinTravelWrapper = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 15px;
+     background-color: #171718;
   }
-  @media (min-width: 375px) {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 15px;
-  }
-`;
+`
 
 export const WinTravelHeader = styled.div`
   background-color: #2c3234;
@@ -59,15 +68,17 @@ export const WinTravelHeader = styled.div`
   }
 `;
 export const WinTravelList = styled.div`
-  background-color: #1e2122;
+   background-color: #1e2122; 
+
   border-radius: 12px;
   width: 100%;
-  max-width: 311px;
   padding: 20px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   position: relative;
+
+  
 
   .title {
     display: flex;
@@ -107,3 +118,23 @@ export const WinTravelList = styled.div`
     }
   }
 `;
+
+export const TravelListRules = styled.div`
+      
+         
+     p{
+        text-align:center;
+        color:#FFFFFF;
+        font-size:13px;
+        line-height:1.6;
+        margin-bottom:10px; 
+     }
+
+     @media(min-width:768px){
+        p{
+          font-size:14px;
+          line-height:1.8;
+          margin-bottom:12px; 
+        }
+     }
+`

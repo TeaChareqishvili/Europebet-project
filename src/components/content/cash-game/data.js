@@ -209,3 +209,39 @@ export const travelRightData = [
     text2:'*ტურნირზე მონაწილებას შეძლებენ მხოლოდ ევროპაბეთის ბეჭდის მფლობელები.',
      }
 ];
+
+
+export const keyData = [
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+  {
+    text:'სპეციალური ტურნირი Cashgame Sharks II ადგილი'
+  },
+
+]
