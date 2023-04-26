@@ -10,7 +10,7 @@ function Content() {
     { title: "Spring Series", subtitle: "13-29 აპრილი" },
     { title: "Final Stage", subtitle: "30 აპრილი" },
   ];
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   const clickHandler = (id) => {
     setActive(id);
   };
