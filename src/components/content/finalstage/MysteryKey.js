@@ -123,6 +123,11 @@ export const KeyHeader = styled.div`
   justify-content: center;
   position: relative;
 
+  img{
+    width:100%;
+   
+  }
+
   :before {
     content: "";
     position: absolute;
@@ -137,7 +142,9 @@ export const KeyHeader = styled.div`
   }
 
   @media(min-width:768px){
-    padding: 26px 0 22px 0;
+    padding: 26px 30px 22px 30px;
     border-radius: 16px 16px 0 0;
+
+   
   }
 `;
