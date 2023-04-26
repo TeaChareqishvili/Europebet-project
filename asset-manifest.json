@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.af9190b3.css",
-    "main.js": "/static/js/main.7e5be252.js",
-    "static/js/787.c90de823.chunk.js": "/static/js/787.c90de823.chunk.js",
-    "static/media/bg.png": "/static/media/bg.2b2357f807f935bc0053.png",
-    "static/media/promo-3.png": "/static/media/promo-3.6f359687e229a119f883.png",
-    "static/media/promo-1.png": "/static/media/promo-1.c12dc7d05f331178b3d9.png",
-    "static/media/malta.jpg": "/static/media/malta.5f43e389c09f05dbebdc.jpg",
-    "static/media/banner.jpg": "/static/media/banner.0161f0cbc2a080e249b4.jpg",
-    "static/media/promo-2.png": "/static/media/promo-2.f2c8e6715ca6df371b64.png",
-    "static/media/main-bg.png": "/static/media/main-bg.20f236ba51b29e2a3ec0.png",
-    "static/media/bold.ttf": "/static/media/bold.65c98b9376070e9071e4.ttf",
-    "static/media/main-bg-sm.png": "/static/media/main-bg-sm.e18db0b56096864f70c3.png",
-    "static/media/promo-left-img.png": "/static/media/promo-left-img.066d1bd0efe100030e64.png",
-    "static/media/promo-right-img.png": "/static/media/promo-right-img.b1376ba44e821f0f6829.png",
-    "static/media/key.png": "/static/media/key.da9f5fc52db4752cef51.png",
-    "static/media/medium.otf": "/static/media/medium.938ba0f9f7dad38c4afb.otf",
-    "static/media/tournament-bg.png": "/static/media/tournament-bg.a521475b5802263200af.png",
-    "index.html": "/index.html",
-    "main.af9190b3.css.map": "/static/css/main.af9190b3.css.map",
-    "main.7e5be252.js.map": "/static/js/main.7e5be252.js.map",
-    "787.c90de823.chunk.js.map": "/static/js/787.c90de823.chunk.js.map"
+    "main.css": "/Europebet-project/static/css/main.aeacb1e3.css",
+    "main.js": "/Europebet-project/static/js/main.0317777f.js",
+    "static/js/787.c90de823.chunk.js": "/Europebet-project/static/js/787.c90de823.chunk.js",
+    "static/media/bg.png": "/Europebet-project/static/media/bg.2b2357f807f935bc0053.png",
+    "static/media/promo-3.png": "/Europebet-project/static/media/promo-3.6f359687e229a119f883.png",
+    "static/media/promo-1.png": "/Europebet-project/static/media/promo-1.c12dc7d05f331178b3d9.png",
+    "static/media/malta.jpg": "/Europebet-project/static/media/malta.5f43e389c09f05dbebdc.jpg",
+    "static/media/banner.jpg": "/Europebet-project/static/media/banner.0161f0cbc2a080e249b4.jpg",
+    "static/media/promo-2.png": "/Europebet-project/static/media/promo-2.f2c8e6715ca6df371b64.png",
+    "static/media/main-bg.png": "/Europebet-project/static/media/main-bg.20f236ba51b29e2a3ec0.png",
+    "static/media/bold.ttf": "/Europebet-project/static/media/bold.65c98b9376070e9071e4.ttf",
+    "static/media/main-bg-sm.png": "/Europebet-project/static/media/main-bg-sm.e18db0b56096864f70c3.png",
+    "static/media/promo-left-img.png": "/Europebet-project/static/media/promo-left-img.066d1bd0efe100030e64.png",
+    "static/media/promo-right-img.png": "/Europebet-project/static/media/promo-right-img.b1376ba44e821f0f6829.png",
+    "static/media/key.png": "/Europebet-project/static/media/key.da9f5fc52db4752cef51.png",
+    "static/media/medium.otf": "/Europebet-project/static/media/medium.938ba0f9f7dad38c4afb.otf",
+    "static/media/tournament-bg.png": "/Europebet-project/static/media/tournament-bg.a521475b5802263200af.png",
+    "index.html": "/Europebet-project/index.html",
+    "main.aeacb1e3.css.map": "/Europebet-project/static/css/main.aeacb1e3.css.map",
+    "main.0317777f.js.map": "/Europebet-project/static/js/main.0317777f.js.map",
+    "787.c90de823.chunk.js.map": "/Europebet-project/static/js/787.c90de823.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af9190b3.css",
-    "static/js/main.7e5be252.js"
+    "static/css/main.aeacb1e3.css",
+    "static/js/main.0317777f.js"
   ]
 }
