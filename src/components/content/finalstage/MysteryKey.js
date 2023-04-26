@@ -144,7 +144,11 @@ export const KeyHeader = styled.div`
   @media(min-width:768px){
     padding: 26px 30px 22px 30px;
     border-radius: 16px 16px 0 0;
-
+    
+    img{
+      width:100%;
+      max-width:453px;
+    }
    
   }
 `;
