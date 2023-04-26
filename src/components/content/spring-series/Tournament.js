@@ -77,12 +77,15 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+ 
+  
   .time-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    
   }
   .cardRightsm {
     position: absolute;
