@@ -116,8 +116,7 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-    /* border-radius: 0 0 16px 16px; */
+  
   }
 
   button {

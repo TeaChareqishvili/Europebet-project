@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-//  import logobtn from "../../assets/logo.png";
 
 export default function BannerHeader({ handleClose }) {
   return (
-    <>
+    
       <DesktopHeader>
         <div className="headerDate">
           <p>
@@ -13,16 +12,7 @@ export default function BannerHeader({ handleClose }) {
         </div>
         <div className="exit-sign" onClick={() => handleClose(true)}></div>
       </DesktopHeader>
-      {/* <MobileHeader>
-      <div className="logo">
-        <img src={logobtn} alt="logo"/>
-      </div>
-      <div>
-        <button></button>
-        <button></button>
-      </div>
-    </MobileHeader>  */}
-    </>
+    
   );
 }
 
@@ -93,6 +83,4 @@ export const DesktopHeader = styled.div`
   }
 `;
 
-// export const MobileHeader =styled.div`
 
-// `

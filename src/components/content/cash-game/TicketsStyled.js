@@ -20,17 +20,12 @@ export const TicketTable = styled.div`
   padding: 14px 16px;
   margin-bottom: 8px;
   .img-wrapper {
-    /* width: 50px;
-    background: "#202324";
-    border-radius: 6px; */
     margin-right: 14px;
   }
   :before {
     content: "";
     position: absolute;
     left: 15px;
-    /* transform: translateY(50%); */
-    /* right: 50%;  */
     height: 46px;
     width: 4px;
     border-radius: 0 4px 4px 0;
