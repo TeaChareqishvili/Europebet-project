@@ -15,16 +15,7 @@ function Main() {
 
   return (
     <>
-      <div
-        style={{
-          height: "100%",
-          width: "100%",
-          position: 'absolute',
-          left: 0,
-          top: 0,
-        }}
-        onClick={() => handleClose(false)}
-      />
+     
       {!close && (
         <MainWrapper>
           <Header />
