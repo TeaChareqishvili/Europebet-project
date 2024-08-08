@@ -1,3 +1,11 @@
+
+Overview
+
+This project is a web application designed as a popup for casino websites. It provides users with information about various casino games. The application consists of three pages with a user-friendly interface.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
